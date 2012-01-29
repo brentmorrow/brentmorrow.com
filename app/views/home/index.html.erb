@@ -1,1 +1,100 @@
-<p>Hello World!!!</p>
+<!DOCTYPE HTML>
+
+
+  
+
+
+	
+	<style type="text/css">
+		h1{
+			font-size:24px;
+			color:#FE9901;
+		}
+		.mainSection{
+			margin-top:24px;
+		}
+		.twitterHeader{
+			background:#FE9901;
+		}
+		.twitterHeader h2{
+			color:white;
+			margin-top:12px;
+			font-size:24px;
+		}
+		footer{
+			background:#FE9901;
+			min-height:150px;
+		}
+	</style>
+
+	<%= image_tag("header.jpg", :alt => "Header", :width => "980px") %>
+	<header class="container">
+		
+	</header>
+	<br class-"clear"/ >
+	
+	<section class="container mainSection">
+		
+			<div class="span-8 float-right twitterHeader">
+				<h2 class="prepend-4">twitter</h2>
+				<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'profile',
+				  rpp: 5,
+				  interval: 6000,
+				  width: 300,
+				  height: 300,
+				  theme: {
+				    shell: {
+				      background: '#fe9901',
+				      color: '#fefefe'
+				    },
+				    tweets: {
+				      background: '#fe9901',
+				      color: '#fefefe',
+				      links: '#ffe5a3'
+				    }
+				  },
+				  features: {
+				    scrollbar: false,
+				    loop: false,
+				    live: true,
+				    hashtags: true,
+				    timestamp: true,
+				    avatars: true,
+				    behavior: 'all'
+				  }
+				}).render().setUser('JosephSouthern').start();
+				</script>
+			</div>
+
+		<div class="span-3">&nbsp;</div>
+		
+		<div class="prepend-2 span-10">
+			<h1>welcome to Brent Morrow's home page</h1>
+			<p>Links for HTML and CSS exercises</p>
+			Chapter 1
+			<ul>
+				<li><%= link_to 'Index', 'ch1/index.html' %></li>
+				<li><a href="ch1/index.html">Index</a></li>
+				<li><a href="ch1/mission.html">Mission</a></li>
+			</ul>
+			<a href="http://www.google.com">google</a>
+			<p>
+			Nunc scelerisque cursus dolor sit amet tincidunt. Ut ut orci enim, vitae porta enim. Duis tincidunt vulputate suscipit. Praesent id mauris elit. Praesent sed velit odio, quis ultricies velit. Mauris eu risus massa, ac pharetra urna. Sed porttitor turpis.
+			</p>
+			<br/>
+			<br/>
+			<br/> 
+		</div>
+
+	
+		
+	</section>
+	<footer>
+		asdf
+	</footer>
+	
+
